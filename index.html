@@ -11,24 +11,30 @@
   </head>
     
     <style>
+        html,
+        body {
+        height: 100%;
+        }
+        
         body {
             //background-color: tomato;
             position: relative;
         }
         
         .jumbotron {
-            margin-top: 55px;
+            margin-top: 2rem;
             color: white;
-            
+            background: white;
             background-image: url(images/joshua-earle-133254_rs_2.jpg);
-            background-position: center;
-            //background-position: right;
-            //background-size: 100% auto;
             background-repeat: no-repeat;
-            height: 650px;   
+            background-position: center center;       
+            height: 100%;   
             text-align: center;
         }
         
+        .message {
+            margin-top: 1rem;
+        }
         
         .jumbotron hr {
             border: 1px solid #999;
@@ -97,7 +103,7 @@
     </style>
     
     
-  <body data-spy="scroll" data-target="#nav" data-offset="100">
+  <body data-spy="scroll" data-target="#nav" data-offset="80">
 <nav id="nav" class="navbar fixed-top navbar-toggleable-md navbar-inverse bg-inverse">
     
   <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -129,11 +135,12 @@
       
       
 <div class="jumbotron" id="home">
+    <div class="message">
       <h1 class="display-3">My Awesome App!</h1>
       <p class="lead">This is why YOU should download this fantastic app.</p>
       <hr class="my-4">
       <p>Want to know more? Join our mailing list. It's easy.</p>
-
+    </div>
   <form class="form-inline">
     <div class="form-group">
          <label class="sr-only" for="email">Email</label>
@@ -175,7 +182,7 @@
       <small class="text-muted">Last updated 3 mins ago</small>
     </div>
   </div>
-        <br>
+        
   <div class="card">
     <img class="card-img-top" src="images/wildernes.jpg" alt="Card image cap">
     <div class="card-block">
@@ -186,7 +193,7 @@
       <small class="text-muted">Last updated 3 mins ago</small>
     </div>
   </div>
-        <br>
+        
   <div class="card last">
     <img class="card-img-top" src="images/freedom.jpg" alt="Card image cap">
     <div class="card-block">
@@ -197,7 +204,7 @@
       <small class="text-muted">Last updated 3 mins ago</small>
     </div>
   </div>
-        <br>
+        
 </div>
 </div> <!-- // row 2 -->
     
